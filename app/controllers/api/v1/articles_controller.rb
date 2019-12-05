@@ -1,6 +1,8 @@
 module Api
   module V1
     class ArticlesController < ApplicationController
+      protect_from_forgery with: :null_session
+      
       def index
         articles = Article.order('created_at DESC');
         render json: {status: 'SUCCESS', message: 'Articles loaded', data:articles}, status: :ok
