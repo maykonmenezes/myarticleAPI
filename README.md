@@ -1,24 +1,45 @@
-# README
+# MyArticle (REST API)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+> Version: 1.0
 
-* Ruby version
 
-* System dependencies
+## Description
+A REST API of fake articles
 
-* Configuration
 
-* Database creation
+## Features
 
-* Database initialization
+- **Create article**
+- **Show article**
+- **Destroy article**
+- **Update article**
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Set up the application
+TODO: Instructions here
+## Routes
 
-* Deployment instructions
+### Articles
 
-* ...
+**GET** `/articles/` to retrieve all registered articles.
+
+**GET** `/articles/{id}` to retrieve a specific article.
+
+**POST** `/articles/` to register a new article.
+```
+{
+  "title": "The Line of Beauty",
+  "body": "Delectus aperiam voluptatem et.",
+}
+```
+
+* title - Title of the article.
+* body - Body of the article.
+
+
+## Running Tests
+
+You can run some automated tests to check the functionalities by running the command below:
+
+    bundle exec rspec spec
