@@ -22,11 +22,11 @@ TODO: Instructions here
 
 ### Articles
 
-**GET** `/articles/` to retrieve all registered articles.
+**GET** `api/v1/articles/` to retrieve all registered articles.
 
-**GET** `/articles/{id}` to retrieve a specific article.
+**GET** `api/v1/articles/{id}` to retrieve a specific article.
 
-**POST** `/articles/` to register a new article.
+**POST** `api/v1/articles/` to register a new article.
 ```
 {
   "title": "The Line of Beauty",
@@ -37,6 +37,23 @@ TODO: Instructions here
 * title - Title of the article.
 * body - Body of the article.
 
+**UPDATE** `api/v1/articles/{id}` to delete a specific article.
+```
+{
+  "id": "1"
+  "title": "The Line of Beauty",
+  "body": "Delectus aperiam voluptatem et.",
+}
+```
+
+**DELETE** `api/v1/articles/{id}` to delete a specific article.
+```
+{
+  "id": "1"
+  "title": "The Line of Beauty",
+  "body": "Delectus aperiam voluptatem et.",
+}
+```
 
 ## Running Tests
 
