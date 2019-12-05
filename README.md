@@ -37,7 +37,7 @@ TODO: Instructions here
 * title - Title of the article.
 * body - Body of the article.
 
-**UPDATE** `api/v1/articles/{id}` to delete a specific article.
+**UPDATE** `api/v1/articles/{id}` to update a specific article.
 ```
 {
   "id": "1"
@@ -47,13 +47,7 @@ TODO: Instructions here
 ```
 
 **DELETE** `api/v1/articles/{id}` to delete a specific article.
-```
-{
-  "id": "1"
-  "title": "The Line of Beauty",
-  "body": "Delectus aperiam voluptatem et.",
-}
-```
+
 
 ## Running Tests
 
